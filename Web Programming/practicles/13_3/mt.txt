@@ -1,0 +1,18 @@
+-animation is an effect which can change direction ,shape,shade of the objectis called animation
+-in css3  we can able to design effective animation
+-we can cfreate animations which can replace,animated images,flash animations and javascripts in many webpages.
+- @keyframes is used
+
+<-css3 Variable->
+     A good way to use css Variable is when its comes to the colors of your design.
+     instead of copy and paste the same colors over and over again,youcan place,them in a Variable
+
+     how to define a function:
+            var( --name, value)
+
+        the variable name must declared with --(two dashes).it case sencitive    
+
+
+    pseudo-class:
+     using it we can give special effects on the selector. 
+     there are pseudo classes that are most commonly used,those are focus,hover,hyperlink   

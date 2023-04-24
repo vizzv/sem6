@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="c1" height="500"  width="500" style="border: 2px solid black" ></canvas>
+    <script> var cn=document.getElementById("c1");
+        
+            var ctx=cn.getContext("2d");
+            
+            ctx.font="40px Gigi regular";
+            ctx.strokeStyle="blue";
+            ctx.strokeText("Hello I am Vishw",50,50);
+
+            ctx.beginPath();
+            ctx.font="40px Jokerman regular";
+            ctx.fillStyle="red";
+            ctx.fillText("Hello From Joker",100,100);
+           
+
+            
+    </script>     
+            
+            
+
+</body>
+</html>

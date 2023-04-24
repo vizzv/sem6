@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current',{packages:['corechart']});
+        google.setOnLoadCallback(drawChart);
+        function drawChart(){
+            var data=google.visualization.arrayToDataTable([
+                ['product','Q1sales',{role:'annotation'},{role:'style'}],
+                ['shirt',30,"30",'color:gray'],
+                ['cap',40,"40",'color:red; opacity:0.2'],
+                ['shoes',50,"50",'stroke-color:pink; stroke-width:4 ; fill-color:green'],
+            ]);
+            var options={
+                title:"Product Sales",
+                legend:"bottum",
+                animation:{startup:true , duration:2000,easing:"inAndout"},
+                isStacked:true,
+                hAxis:{
+                    title:"sales",
+
+                },
+                vAxis:{
+                    title:"product"
+                }
+
+            };
+
+            var chart =new google.visualization.BarChart(document.getElementById("myDiv"));
+            chart.draw(data,options);
+            var buttN=document.getElementById("changeData");
+            var fst=true;
+
+            buttN.onclick=function(){
+                if(!fst){
+                    fst=!fst;
+                    data.setValue(0,1,40);
+                    data.setValue(1,1,50);
+                    data.setValue(2,1,60);
+
+                    data.setValue(0,2,"40");
+                    data.setValue(1,2,"50");
+                    data.setValue(2,2,"60");
+                    
+                }
+                else{
+                    fst=!fst;
+                    data.setValue(0,1,10);
+                    data.setValue(1,1,20);
+                    data.setValue(2,1,30);
+
+                    data.setValue(0,2,"10");
+                    data.setValue(1,2,"20");
+                    data.setValue(2,2,"30");
+                }
+                chart.draw(data,options)
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="myDiv" style="height: 500px; width: 500px;"></div>
+    <div>
+        <input id="changeData" type="button" value="change">
+    </div>
+</body>
+</html>

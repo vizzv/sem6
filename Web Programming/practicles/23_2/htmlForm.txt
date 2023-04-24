@@ -1,0 +1,40 @@
+form is a container which is able to hold some moere controls.
+It is polpularlly known as webform or html form on A webpage.
+allows a user to enter the data that is sent to a server for processing.
+A form will input from user and this information stored into a web server.
+Forms are used to create user interactive web pages.
+Foms comes under DHTML(Dynamic Html= html+css+js).
+Form is a example of paired tag.
+
+Attributes of Form :
+    name -> Any Name
+    target -> _blank , _parent
+    action -> specify where to navigate. 
+    method -> GET,POST
+
+Form tags :
+    Form -> are classified into 2 types input field and select field.
+    input ->    field names -> syntax
+                    text box -> type="text"
+                    password box -> type="password"
+                    submit button -> type="submit"
+                    reset button -> type="reset"
+                    checkbox -> type="checkbox"
+                    radio button -> type="radio"
+                Attributes
+                    name -> any name
+                    value -> any value it can also be a string
+                    size -> in terms of pixel.
+                    maxlength -> number.
+                    rows,cols -> used for textarea.
+                    readonly -> true,false
+                    disabled -> disabled=disabled
+                    checked -> checked=checked
+                    multiple -> true,false    
+                    
+    textarea ->
+    combo box ->
+    list box ->
+    label ->
+    select ->
+    option ->

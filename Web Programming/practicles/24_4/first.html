@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="cl()">
+        click
+    </button>
+    <div id="dv" class="v">
+
+    </div>
+    <script>
+        
+        
+        function cl(){
+            var s=new String("abcdefghijklmnopqrstuvwxyz");
+            var s1="abcdefgh"
+            var dv=document.getElementById("dv");
+            
+            dv.innerHTML=s.length;
+            console.log(s.charAt(2));
+            console.log(s.match("ab*"))
+            console.log(s.toLowerCase());
+            console.log(s.toUpperCase());
+            console.log(s.concat("ab"))
+            console.log(s.substring(0,5))
+            
+            
+
+        }
+        
+    </script>
+</body>
+</html>

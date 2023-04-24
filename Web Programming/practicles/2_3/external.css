@@ -1,0 +1,30 @@
+*{font-family:tahoma;
+    font-size: 40px;
+    background-color:#4424ff;
+    color: crimson;
+}
+
+p{
+    color:chartreuse ;
+    font-size:30px;
+    font-family: jokerman ;
+    font-weight: bold;
+}
+h1{
+    background-color: whitesmoke;
+    color: darkorange;
+}
+h2{
+    background-color: black;
+}
+h3{
+    background-color: darkgrey;
+}
+vizz{
+    color: white;
+    background-color: black;
+}
+[href]{
+    color: black;
+    font-size: large;
+}

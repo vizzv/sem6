@@ -1,0 +1,7 @@
+It is a small and lightweight javascript library.
+it is crossplatform
+it is write less do more
+it is very fast and extensible
+it improves the performance of an application.
+it facilitates the users to erite ui related function code in minimum possible lines.
+Jquary is developed by google.

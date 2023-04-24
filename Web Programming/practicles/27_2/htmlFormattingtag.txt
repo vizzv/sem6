@@ -1,0 +1,19 @@
+
+b -> for bold
+strong ->
+
+em -> for italic
+i ->
+
+s -> for linr on text(through text)
+strike ->
+del ->
+
+u ->
+
+big ->
+small ->
+
+q -> 
+
+center ->

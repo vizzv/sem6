@@ -1,0 +1,3 @@
+webdesigner have a full control; over postion.
+there is a position property in css.
+there are some style propertyies left and top which are used in deciding the position of an element on the web document.

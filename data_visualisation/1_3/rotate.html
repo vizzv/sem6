@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="c1" height="1000" width="1000" ></canvas>
+    <script>
+        var cn=document.getElementById("c1"); 
+        var ctx=cn.getContext("2d");
+        
+        ctx.strokeStyle="red";
+        
+        
+        var angle=0;
+        ctx.translate(500,500);
+        for(angle=0;angle<=350;angle++){
+            ctx.rotate(10*Math.PI/180);
+            if(angle%2==0){
+                ctx.fillStyle="red";
+            }
+            
+            else{
+                ctx.fillStyle="blue";
+            }
+            ctx.fillRect(200,200,100,100);
+            
+            ctx.stroke();
+        }
+        
+    </script>
+</body>
+</html>

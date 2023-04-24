@@ -1,0 +1,13 @@
+d3.js is js library to manipulate file,
+it is dynamic ,iterative,iterative,online data visualizing used by large number of websites
+dt helps you to bring data to life using data ,html,svg and css
+with minimal overhead ,d3 is extermally fast supporting large datasetand dynamic behaviour for iteraction and animation.
+d3 features
+    data manipulation
+    dom manipulation
+    data driven elements
+    dynamic properties
+    types of visualization
+    customise visualization
+    interaction and animation
+    

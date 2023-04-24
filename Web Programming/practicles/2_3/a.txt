@@ -1,0 +1,24 @@
+if we specify style in html file it self than thay are called as internal stle.
+this style can not be used in other files.
+Internal style sheet are used for whole site page.
+Inside the head tag,the syle tag surround all of the style for the page.
+
+we save the external file consisting styles with .css extension.
+the changes made in external css file will affect all the html file which are using those styles.
+
+css selctor:
+types of selectors:
+    1 ->tag selector or type selctor or simple selector:
+    2 -> Attribute selector
+    3 -> grouping
+    4 -> universal
+    5 -> customised
+    6 -> generic selector
+    7 -> id selector
+    8 -> class selctor
+    9 -> contexual selector
+
+generalised selctor>
+
+we define class in generalised in the sence that 
+perticular class can be applied to any html tag.      

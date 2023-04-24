@@ -1,0 +1,29 @@
+wild card selector:
+
+    cap selctor(^):
+        the secector every element whose attribute value begins with a specified value.
+
+    asteric(*):
+         the secector every element whose attribute value containing a specified value.
+
+    dollar secector($):
+         the secector every element whose attribute value ends with a specified value.     
+
+
+pseudo element:
+    A class pseudo element is a keyword added to a selector that lets you style a specified part of selctde element. 
+
+    ::first-letter 
+    ::first-line
+    ::after
+    ::before
+    ::selection
+    ::marker
+    ::placeholder
+
+
+flexbox:
+    in a perfect world of browser support the reson you has choose to use flexbox is because use want to layout collection of items in one direction to another direction.
+
+
+           

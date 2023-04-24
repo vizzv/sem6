@@ -1,0 +1,88 @@
+<html>
+<head>
+<title> tables </title>
+<style>
+   .current-row{background-color:purple}
+   .current-col{background-color:crimson}
+</style>
+
+<script type = "text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="../Libraries/datatables.js"></script>
+<style rel="stylesheet" href="../Libraries/datatables.css"></style>
+
+
+<script>
+	$(function(){
+		$("#t1").dataTable(
+			{}
+		);
+	});
+</script>
+
+<script>
+$(document).ready(function()
+{
+  $('.k1').hover(function(){
+    $(this).addClass('current-row');},
+	function(){
+	$(this).removeClass('current-row');})
+    
+	$("th").hover(function()
+	{
+	  var index=$(this).index();
+	  $("th.k2,td").filter(":nth-child("+(index+1)+")").addClass('current-col');
+	},
+    function()
+	{
+	 var index=$(this).index();
+	 $('th.k2,td').removeClass('current-col');
+	})
+
+	})
+</script>
+</head>
+<body>
+<table id="t1" border="2">
+<thead>
+<tr class="k1">
+<th colspan="3" class="k2"> sales by region </th>
+</tr>
+
+<tr class="k1">
+<th class="k2">region</th>
+<th class="k2">sales</th>
+<th class="k2">mean</th>
+</tr>
+</thead>
+<tbody>
+<tr class="k1">
+<th class="k2">north</td>
+<th class="k2">1000</td>
+<th class="k2">1000</td>
+</tr>
+<tr class="k1">
+<td>south</td>
+<td>1000</td>
+<td>1000</td>
+</tr>
+<tr class="k1">
+<td>east</td>
+<td>1000</td>
+<td>1000</td>
+</tr>
+<tr class="k1">
+<td>west</td>
+<td>1000</td>
+<td>1000</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="k1">
+<td>sum</td>
+<td>10000</td>
+<td>10000</td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>

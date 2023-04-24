@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function getInput(){
+            var input;
+            input=prompt("enter your number");
+            if(confirm("do you want to continue")){
+                if(input%2==0){
+                    alert("your number : "+input+" is even");
+
+                }
+                else{
+                    alert("your number : "+input+" is odd");
+                }
+            }
+            else{
+                document.write("tare nai aavu to hu su kru");
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <input type="button" value="btn" onclick="getInput()">
+</body>
+</html>

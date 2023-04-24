@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script>
+        var arr=new Array(1,2,3,4,5,6);
+        var btn=document.getElementById("bt");
+        var par=document.getElementById("par");
+        
+        
+    </script>
+</head>
+<body>
+    <p id="par"  name="myp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus iure tempora! Unde laboriosam obcaecati inventore aliquam iste iure neque eius, minus possimus vitae perspiciatis laborum, mollitia non expedita esse nisi fugit molestiae numquam. Voluptate ut quaerat repellendus repudiandae illo veniam, laboriosam esse labore n
+        ecessitatibus fugit
+        
+        sequi dolores officia. Doloremque.
+
+    
+    </p>
+    <button name="mybtn" id="bt" onclick=fn() >
+        6una mat mereko
+    </button>
+    <script>
+    function fn(){
+        arr.reverse()
+        document.getElementById("par").innerHTML=""+arr;
+    }
+</script>
+</body>
+</html>

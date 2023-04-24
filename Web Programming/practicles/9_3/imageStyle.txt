@@ -1,0 +1,7 @@
+1:roundedImage
+2:thumbnailImage
+3:responsiveImage
+4:transparentImage
+
+responsive image:
+this is an image thats get adjusted as per the screen size.

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="c1" height="500"  width="500" style="border: 2px solid black" ></canvas>
+    <script> var cn=document.getElementById("c1");
+        
+            var ctx=cn.getContext("2d");
+            ctx.strokeStyle="blue";
+            ctx.strokeRect(5,5,100,100);
+            ctx.stroke();
+            ctx.fillStyle="green";
+            ctx.fillRect(150,5,100,100);
+            ctx.stroke();
+            ctx.clearRect(50,5,150,150);
+            ctx.setLineDash([5]);
+            ctx.strokeStyle="blue";
+            ctx.strokeRect(100,100,100,100);
+            ctx.stroke();
+
+    </script>
+</body>
+</html>

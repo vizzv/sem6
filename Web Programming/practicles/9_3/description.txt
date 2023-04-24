@@ -1,0 +1,3 @@
+dl: it defines description list.
+dt : it defines item list.
+dd : it defines items in the list.

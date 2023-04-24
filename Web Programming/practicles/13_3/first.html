@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        @keyframes myanim{
+            0%{ left: 0px; top: 0px;}
+            25%{ left:50px ; top: 0px;}
+            50%{ top: 100px;}
+            75%{ left: 100px; }
+            100%{left: 0px; top: 100px;}
+        }
+        @keyframes mysec{
+            0%{ left: 0px; top: 0px;}
+            25%{ left:50px ; top: 50px;}
+            50%{ top: 0px;}
+            75%{ left: 0px; top: 100px;}
+            100%{left: 0px; top: 100px;}
+        }
+        @keyframes mythrd{
+            0%{ left: 0px; top: 0px;}
+            25%{ left:0px ; top: 50px;}
+            50%{ top: 0px; left:50px}
+            75%{ left: 100px; top: 100px;}
+            100%{left: 0px; top: 1000%px}
+        }
+        div#frst{
+            height: 200px; 
+            width: 200px; 
+            background-color: 
+            lightseagreen; 
+            position:relative ; 
+            animation-name:myanim ; 
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        div#sec{
+            height: 200px; 
+            width: 200px; 
+            background-color:blue; 
+            position:relative ; 
+            animation-name:mysec ; 
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        div#thrd{
+            height: 200px; 
+            width: 200px; 
+            background-color: 
+            rgb(254, 96, 4); 
+            position:relative ; 
+            animation-name:mythrd ; 
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div id="frst">
+
+    </div>
+    <div id="sec">
+
+    </div>
+    <div id="thrd"></div>
+</body>
+</html>

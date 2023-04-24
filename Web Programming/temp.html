@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        table{
+            background-color: greenyellow;
+            border-color: red;
+            
+        }
+        table td{
+            text-align: center;
+            color: black;
+        }
+        #h1{
+            position: static;
+            top: 50px;
+            left:50px
+        }
+        #h2{
+            position: relative;
+            top: 50px;
+            left:50px
+        }
+        #h3{
+            position: absolute;
+            top: 50px;
+            left:50px
+        }
+        #h4{
+            position:fixed;
+            top: 50px;
+            left:50px
+        }
+        #h5{
+            position:sticky;
+            top: 50px;
+            left:50px
+        }
+    </style>
+</head>
+<body align="center" >
+    <table style="height: 200px; width: 200px; border-collapse: collapse;" border="5px solid"  >
+        <caption>My Table</caption>
+        <tr>
+            <td colspan="2"> One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td rowspan="2"> Three</td>
+        <td>Four</td>
+        <td rowspan="2"> Six</td>
+        </tr>
+        <tr>
+            <td>Five</td>
+        </tr>
+        <td>Seven</td>
+        <td colspan="2"> Eight</td>
+        <tr></tr>
+    </table>
+
+    
+    <h1 id="h2">
+        h2
+    </h1>
+    <h1 id="h3">
+        h3
+    </h1>
+    <h1 id="h4">
+        h4
+    </h1>
+    <h1 id="h5">
+        h5
+    </h1>
+</body>
+</html>

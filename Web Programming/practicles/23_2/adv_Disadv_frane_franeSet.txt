@@ -1,0 +1,11 @@
+dis Adv of frame:
+    Frames are not using in html5 environment.
+    Frames are not compatible with latest gadgets and widgets.
+    The url in the address bar always stay the same.
+    Some browsers are not supported Frames at all.
+    Lot of design and linking issues are there.
+    Frames are not sreach engine .
+    printing issues are there.
+    accessibility issues are there.
+
+    

@@ -1,0 +1,51 @@
+image tag:
+    it required to used to display image;
+    there are two type of images
+        1:Internal image
+        2:External image
+
+Attribute:
+    src-> image path
+    width-> in pixel
+    height-> in pixel
+    border-> in pixel
+    align->left,right
+    title-> any string
+    alt-> any error msg
+        
+tyheniedj each pixel of spaces.each frame set reflect seprate document         
+
+A function is a reusable which can be called anywhere in your javascript program.
+
+this eliminates the need of writing the same code again and again.
+this will  help programers to write modular code.
+this benefit is also known as code reusability.
+function can be defined in thwe head section as well as the body section of document.
+a javascript function is defined with the function keyword.
+followed bya name,parenthenses.
+function name can contains letters ,digits,underscores,and doller signs.
+
+objects in javascript:
+js is object oriented scripting language.
+object is an identifiable entity is nothing but a datatype where as in jsavascripty it is consiyuiytrjb ascvbnklytrsgy lokbkjhytrfct
+there tewertyuio tyuiopiuyte of jhgfdsascvcasxcfrtyuipuytgb nkkojhnbnklllllllllkjhytredcgtgb bgfrtyuiojhgfdwsertflkjhredfve3rhjkl ojhbvnjhgredcft.
+array object
+boolean
+date
+string
+reg exp
+math
+number
+
+
+browser level object
+Window object:-
+Navigator object
+Screen object
+history object 
+Location 
+
+Array object can be declared in js in 3 ways
+1.literal way
+2.condensed way
+3.regular way.

@@ -1,0 +1,23 @@
+division tag:<div>
+   paired tag.
+   used to make division of containts in the webpage like {
+                                                            text,image,header,footer,navigation,etc
+                                                            }
+    it id most usable tag in web development.
+    beacause it helps to seprate out data in the webpage and 
+    we can create perticular section for perticular data or function in the webpages.
+
+    div is container tag .
+    it is block level tag.
+
+Attributes of division.
+    Allign="left,right,center".
+    Style="".
+    id= it allows to access the division element in scripting language 
+            like javascript to modify the style and the content dynamically.
+    class=
+
+    id is used to specify style for a single unique element.
+    id selctor used the id attribute of the html element with defined by #{hash} notation.
+    class is used to specify a style for a group of element .
+    class selector uses the html class attribute and it is defined by .{period}  

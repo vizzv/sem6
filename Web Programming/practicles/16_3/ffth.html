@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        div.fex-box{
+            background-color: rgb(16, 38, 77);
+            color: rgb(36, 249, 249);
+            padding: 10px;
+            margin: 10px;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bolder;
+            border: 3px solid fuchsia;
+            align-self: center;
+        }
+        div.flex{
+            display: flex;
+            border: 3px dotted tomato;
+            background-color: dodgerblue;
+            padding: 20px;
+            
+            
+            flex-direction: column-reverse;
+            align-items:flex-end;
+            flex-wrap: wrap-reverse;
+            flex-grow: 3;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="fex-box">
+            1
+        </div>
+        <div class="fex-box">
+            2
+        </div>
+        <div class="fex-box">
+            3
+        </div>
+        <div class="fex-box">
+            4
+        </div>
+        <div class="fex-box">
+            5
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+function of String.
+
+charAt() : it returns character at the specified index of a string.(string index will start from 0.)
+
+match(): it searches a string for a string against a regular expressions and returns the patchesas an array object.
+concat(): used to add string to another string.
+
+what is an event in js:
+
+    by using javascript we have ability to create dynamic webpages.
+    events are actions that can be detected by js.
+    every element on a webpage has certain events which can trigger the js.
+    examples of event:
+        clicking the button->
+        a page is finished loading->
+        an image is finished loading->
+        moving the mouse cursor over an element->
+        submitting form->
+        keystroke->
+        entering inputfield->
+        

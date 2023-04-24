@@ -1,0 +1,75 @@
+Attributes:
+IT GIVES US ADDITIONAL FEATURES.
+
+syntax:
+
+<body attribute_name="value">
+
+</body>
+
+example:
+<body bgcolor = "black" >
+
+</body>
+
+
+-------------------------------------------------------------------------
+table:
+
+    defination: Html is collection of cells not of rows and coloms as tradition.
+
+    -> IT IS USEd to repreaent our data in tabular form.
+    -> The best way to split a page into different sections.
+    -> In Html A table means collection of cells.
+    -> It is non-Empty tag/paired tag.
+
+table rows:
+
+    -> the horizontal lines present in table are called as table rows.
+    -> to represent table rows we use tr tag.
+    -> It is non empty tag.
+
+******Note: Table collums are not available in Html. *****    
+
+cells:
+    -> Each row consist of a number of cells and each cell is defined by a tag.
+    -> it is denoted by td.
+    -> it is not empty tag.
+
+caption:
+    -> to show caption 
+    -> non-Empty
+
+table header:
+    -> it is used to highlight header of table ie colomns name
+    ->it is non empty tag
+List of Attributes and Parameters of table
+
+        Attribute             |         value
+        ---------------------------------------
+        border                |          pixel
+        bordercolor           |          colorname/colorcode
+        bgcolor               |          colorname/colorcode
+        background            |          imagePath
+        height                |          pixel/percentage
+        width                 |          pixel/percentage
+        Allign                |          left,right,center
+        vallign               |          top,middle,bottom
+        rules                 |          rows,cols,all
+        cell spacing          |          pixel
+        cel padding           |          pixel
+        row span              |          number
+        col span              |          number
+
+Attribute:        
+cell spacing:
+    this Attribute is used to change the spacing between the cells.
+cell padding:
+    this Attribute is used to change the space between the contains to the inner edge of the cell.
+
+Row span & col span:
+    this FEATURES allows you to extend collums and rows across multiple other cols and rows
+    colspan:
+        it extends cells on a horizontal row.
+    rowspan"
+        it extends cells on a vertical row.    

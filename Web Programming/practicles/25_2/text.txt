@@ -1,0 +1,8 @@
+
+hr  tag
+
+color ->
+align ->
+width ->
+size ->
+noshade ->

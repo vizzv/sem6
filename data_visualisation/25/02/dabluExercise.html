@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="c1" height="1000"  width="1000" style="border: 2px solid black" ></canvas>
+    <script> var cn=document.getElementById("c1");
+        
+            var ctx=cn.getContext("2d");
+            //ctx.setLineDash([5]);
+            ctx.moveTo(200,200);
+            ctx.lineTo(200,300);
+            ctx.lineWidth=10;
+            
+            ctx.lineTo(300,300);
+            ctx.lineTo(300,200);
+            
+            ctx.arc(250,200,50,0,Math.PI,90);
+            
+            ctx.strokeStyle="orange";
+            ctx.stroke();
+            
+            var ctx=cn.getContext("2d");
+            //ctx.setLineDash([5]);
+            ctx.moveTo(400,400);
+            ctx.lineTo(400,500);
+            ctx.lineWidth=10;
+            
+            ctx.lineTo(500,500);
+            ctx.lineTo(500,400);
+            
+            ctx.arc(450,400,50,0,Math.PI,90);
+            ctx.lineTo(500,400);
+            ctx.strokeStyle="orange";
+            ctx.stroke();
+
+            var ctx=cn.getContext("2d");
+            //ctx.setLineDash([5]);
+            ctx.moveTo(600,600);
+            ctx.lineTo(600,700);
+            ctx.lineWidth=10;
+            
+            ctx.lineTo(700,700);
+            ctx.lineTo(700,600);
+            
+            ctx.arc(650,600,50,0,Math.PI,90);
+            ctx.lineTo(700,600);
+            
+            
+            ctx.arc(650,700,50,0,Math.PI);
+            ctx.strokeStyle="orange";
+            ctx.stroke();
+    </script>
+</body>
+</html>

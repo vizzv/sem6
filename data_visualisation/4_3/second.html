@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="canvasjs.min.js"></script>
+</head>
+<body>
+    <div id="div1" style="height: 300px; width: 100%;"></div>
+    <script>
+        var chart=new CanvasJS.Chart("div1",{
+            title:{
+                text:"my frst chart",
+                fontColor:"blue",
+                fontSize: 30,
+                padding:10,
+                margin:15,
+                backgroundColor:"#ffff00",
+                borderThickness:10,
+                cornerRadius:5,
+                fontWeight:"bold",
+                verticalAlign:"bottom",
+                horizontalAlign:"left" 
+            },
+            axisX:{
+                title:"value of X",
+                fontColor:"red"
+            },
+            axisY:{
+                title:"value of Y"
+            },
+            data:[
+                {type : "bar",
+                name:"first quarter",
+                showInLegend: true,
+                dataPoints:[
+                    {label:"banana",y:58},
+                    {label:"Apple",y:30,indexLabel:"bestSeller"},
+                    {label:"Apple",y:30,indexLabel:"bestSeller"}
+                ]
+                }
+                ,
+                {type : "bar",
+                name:"second Quarter",
+                showInLegend: true,
+                
+                dataPoints:[
+                    {label:"Apple",y:30,indexLabel:"bestSeller"},
+                    {label:"Apple",y:30,indexLabel:"bestSeller"},
+                    {label:"Apple",y:30,indexLabel:"bestSeller"},
+                    
+                ]
+                }
+            ]
+        });
+        chart.render();
+    </script>
+</body>
+</html>

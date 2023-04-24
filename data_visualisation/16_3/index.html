@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com//jquery-3.5.0.js">
+
+    </script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#btn1").click(function()
+            {
+                $("#s").toggle();
+            });
+            $("p").mouseenter(function(){
+                alert("paheli fursat me nikal");
+            });
+            $("p").mouseleave(function(){
+                alert("bach gya sala")
+            });
+            $("p").mousedown(function(){
+                alert("khobche me chla gya")
+            });
+            $("p").mouseup(function(){
+                alert("thunbarg ki thandi lag gai")
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <p> if you click me i disappear</p>
+    <p> me too!</p>
+    <button id="btn1">I am button</button>
+    <button id="s">I am dusra wala</button>
+</body>
+</html>

@@ -1,0 +1,9 @@
+it is of css3.
+It allows the developer to display transition between two or more colors.
+there are 2 ways by the gradient effect can be specified in css3
+1: linear gradient.
+    {
+        this property must have atleast two color stops.
+        this color stops are required for the smooth transition from one color to another.
+    }
+2: radial gradient.

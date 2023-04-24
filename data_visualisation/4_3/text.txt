@@ -1,0 +1,16 @@
+canvas js is powerful & lightweight.
+
+features of canvas js
+1: elegant looking charts. 
+2: Animations 
+3: High performance
+4: Beautyful themes
+5: Runs on chrome,fire-fox,...
+7: dynamic real time charts.
+8: zomm in
+9: export as a image jpeg,png.
+10: wide range of customisable charts.
+11: number and date formatting themes.
+12: work on all modern devices.
+13: canvas js is stand alone(not dependant on any library)
+14: fantastic support for developer.

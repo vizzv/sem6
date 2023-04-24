@@ -1,0 +1,31 @@
+cascading style sheet
+
+cascading means inheriting.
+style means collection of properties
+sheet .css extension
+
+style is a global attribute which supports collection of properties.
+inheriting style from one section to another section.
+
+Where html gets failed in that case css is used.
+
+in html  few grawbacks are existed which is recovered in css 1.0,2.0,3.0 .
+It is simple design language intended to simplify the process of making webpages presentable.
+
+Features of css:
+It provide flexibility.
+Any platform,any browser ,any technology there is no issue of compatibility.
+Accessebility from any technology.
+Global Change.
+save lot of time.
+easy maintenance.
+easy to manage.
+page load faster.
+supperior to html.
+multiple device compatibility.
+global page standards.
+
+in line css is also known as line level style sheet.
+internal css is also known as embeded stylesheet && page level.
+in line css is also known as project level style sheet.
+in line css can not used cascading.

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="c1" height="1000" width="1000" ></canvas>
+    <script>
+        var cn=document.getElementById("c1"); 
+        var ctx=cn.getContext("2d");
+        
+        var x=10,y=10;
+        var height=width=50;
+        var endX=cn.width-width;
+        var endY=cn.height-height;
+        requestAnimationFrame(draw);
+        setInterval(logic,0.01);
+        function logic(){
+            
+            
+            if(x<endX-0.10 && y>0.10 && x>=y){
+                x=x+5;
+                requestAnimationFrame(draw);
+                console.log("from if "+x+"->"+y);
+            }
+            else if(x>endX-0.10 && y<endY-0.10 && y<=x){
+                y+=5;
+                requestAnimationFrame(draw);
+                console.log("from else if 1 "+x+"->"+y);
+            }
+            else if(y>149 && x>=0.10){
+                x=x-5;
+                requestAnimationFrame(draw);
+                console.log("from else if 2 "+x+"->"+y);
+            }
+            else if(y>0.10 && x<=0.10 ){
+                y=y-5;
+                requestAnimationFrame(draw);
+                console.log("from else if 3 "+x+"->"+y);
+            }
+            
+            requestAnimationFrame(draw);
+            
+        }
+        function draw(){
+            ctx.clearRect(0,0,cn.width,cn.height);
+            ctx.fillStyle="green";
+            ctx.fillRect(x,y,width,height);
+        }
+        
+    </script>
+</body>
+</html>

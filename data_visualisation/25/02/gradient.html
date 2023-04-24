@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="c1" height="500"  width="500" style="border: 2px solid black" ></canvas>
+    <script> var cn=document.getElementById("c1");
+        
+        var ctx=cn.getContext("2d");
+        var grd=ctx.createLinearGradient(0,0,200,200);
+        grd.addColorStop(0,"#191825");
+        grd.addColorStop(0.25,"#865DFF");
+        grd.addColorStop(0.5,"#E384FF");
+        grd.addColorStop(1,"#FFA3FD");
+        
+        
+        ctx.fillStyle=grd;
+        ctx.fillRect(0,0,200,200);
+        ctx.beginPath();
+        var grd=ctx.createLinearGradient(400,0,200,200);
+        grd.addColorStop(0,"#191825");
+        grd.addColorStop(0.25,"#865DFF");
+        grd.addColorStop(0.5,"#E384FF");
+        grd.addColorStop(1,"#FFA3FD");
+        ctx.fillStyle=grd;
+        ctx.fillRect(200,0,200,200);
+        ctx.beginPath();
+       /*-----------------------*/
+        
+       var grd=ctx.createLinearGradient(400,400,200,200);
+        grd.addColorStop(0,"#191825");
+        grd.addColorStop(0.25,"#865DFF");
+        grd.addColorStop(0.5,"#E384FF");
+        grd.addColorStop(1,"#FFA3FD");
+        
+        
+        ctx.fillStyle=grd;
+        ctx.fillRect(200,200,200,200);
+        ctx.beginPath();
+        var grd=ctx.createLinearGradient(0,400,200,200);
+        grd.addColorStop(0,"#191825");
+        grd.addColorStop(0.25,"#865DFF");
+        grd.addColorStop(0.5,"#E384FF");
+        grd.addColorStop(1,"#FFA3FD");
+        ctx.fillStyle=grd;
+        ctx.fillRect(0,200,200,200);
+        ctx.beginPath();
+            
+    </script>  
+</body>
+</html>

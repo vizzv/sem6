@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="canvasjs.min.js"></script>
+</head>
+<body>
+    <div id="div1" style="height: 300px; width: 100%;"></div>
+    <script>
+        var chart=new CanvasJS.Chart("div1",{
+            title:{
+                text:"my frst chart",
+                
+            },
+            axisY:{
+                title:"prices",
+                prefix:"₹"
+            },
+            axisX:{
+                internal:2,
+                intervalType: "month",
+                labelAngle: -45
+            },
+            data:[
+                {type : "candlestick",
+                dataPoints:[
+                    {x: new Date(2020,01,01),y:[5198,5629,5159,5385]},
+                    {x: new Date(2020,02,01),y:[5366,5499,5135,5295]}
+                ]
+                }
+                
+            ]
+        });
+        chart.render();
+    </script>
+</body>
+</html>
