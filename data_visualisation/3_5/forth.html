@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../Libraries/d3/d3.js"></script>
+</head>
+<body style="background-color: #110133;">
+    <svg style="height: 500; width:500" >
+        <rect></rect>
+        <rect></rect>
+        <rect></rect>
+        <rect></rect>
+        <rect></rect>
+    </svg>
+    <script>
+        var d=[10,20,30,40,50];
+        var color=["red","yellow","pink","green","cyan"]
+        var s=d3.select("body").select("svg").selectAll("rect");
+        s.data(d).attr("x",20).attr("y",function(data,i){return (i+1)*50;}).transition().duration(1000).attr("height",30).attr("width",function(data,i){return data*10;});
+
+        s.data(color).attr("fill",function(data,i){return data;});
+    </script>
+</body>
+</html>

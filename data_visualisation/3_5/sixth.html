@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .high{fill: orangered}
+    </style>
+    <script src="../Libraries/d3/d3.js"></script>
+</head>
+<body style="background-color: #110133;">
+    <svg style="height: 700; width:700" >
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+    </svg>
+    <script>
+        var d=[{name:"Asia",population:960000},
+            {name:"Bsia",population:820000},
+            {name:"Csia",population:970000},
+            {name:"Dsia",population:760000},
+            {name:"Esia",population:620000},];
+        var color=["red","yellow","dodgerblue","green","cyan"]
+        var s=d3.select("body").select("svg").selectAll("circle");
+        s.data(d).attr("cy",50).attr("cx",function(data,i){return (i+1)*100}).transition().duration(1000).attr("r",function(data,i){return data.population /20000;}).text(function(data,i){return data.name});
+        s.data(color).attr("fill",function(data,i){return data;});
+        d3.select("body").select("svg").selectAll("text").data(d).enter().append("text").attr("y",50).attr("x",function(data,i){return (i+1)*100}).attr("font-size",10).attr("stroke","white").text(function(data,i){return data.name})
+      
+        </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+           var ch=document.getElementById("p1");
+           var para=document.getElementById("txt");
+           var vall=ch.value;
+           if(vall<=10 && vall>0 ){
+            para.innerHTML="input is valid"
+           }
+           else{
+            para.innerHTML="input is invalid"
+           }
+ 
+        }
+    </script>
+</head>
+<body onmouseover="validate()">
+    <form onmouseover="validate()">
+    pass1:<input id="p1" type="text"onmouseover="validate()">
+    check:<input id="p2" type="checkbox"  name="ck"onmouseover="validate()">
+    <br>
+    
+    <button type="submit" onmouseover="validate()">submit</button>
+    
+    </form>
+    <p id="txt"onmouseover="validate()">
+
+    </p>
+</body>
+</html>

@@ -1,0 +1,11 @@
+data binding in svg
+1 data()
+2 enter()
+3 exit()
+
+1 data():
+    It is use to join specific array of Data to the selected dom element and return the updated selection
+2 enter():
+    it is used to create missing element and return .
+3 exit():
+used to remove element.this means all exited elements are stored in some invisible place ready to be removed when the command is given remove    

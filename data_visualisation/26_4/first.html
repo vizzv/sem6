@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="d3.js"></script>
+</head>
+<body>
+    <script>
+        d3.csv("http://127.0.0.1:5500/Chili_Red_2020.csv").then(function(data){
+            /*for(var i=0;i<data.length;i++){
+                
+                document.write(data[i].state+ ":" + data[i].modal_price+"<br/>");
+            }*/
+            var filldata=data.filter(function(e){return e.modal_price==20000;});
+            for(var i=0;i<filldata.length;i++){
+                document.write(filldata[i].state+ ":" + filldata[i].modal_price+"<br/>");
+            }
+        });
+        
+    </script>
+</body>
+</html>

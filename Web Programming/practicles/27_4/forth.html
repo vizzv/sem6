@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            const pass1=document.getElementById("p1").value;
+            const pass2=document.getElementById("p2").value;
+            if(pass1==(null || "") || pass2==(null || "")){
+                alert("enter empty feild")
+                
+            }
+            else if(pass1!=pass2){
+                alert("reEnter password");
+                
+            }
+            document.getElementById("p1").focus();
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="validate()">
+    pass1:<input id="p1" type="password">
+    pass2:<input id="p2" type="password">
+    <button type="submit">submit</button>
+    
+    </form>
+</body>
+</html>

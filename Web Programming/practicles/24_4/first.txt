@@ -11,8 +11,12 @@ what is an event in js:
     events are actions that can be detected by js.
     every element on a webpage has certain events which can trigger the js.
     examples of event:
-        clicking the button->
+        clicking the button-> onclick(),ondblCkick()
         a page is finished loading->
+        onLoad():
+            it occurse when an object has been loaded.
+            onload is most often use within the body element to execute a script once a webpage has complitally loaded all the contents.
+            syntax: object.onLoad(jscode)
         an image is finished loading->
         moving the mouse cursor over an element->
         submitting form->

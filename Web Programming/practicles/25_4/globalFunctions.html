@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="elululu()">
+        click me for expression evaluation
+    </button>
+    <p id="v"></p>
+    <script>
+
+        function elululu(){
+           /* var a=prompt("enter expression")
+            document.getElementById("v").innerHTML=eval(a)
+            if(!isFinite(eval(a))){
+                document.getElementById("v").innerHTML="enter valid input"
+                
+            }*/
+            document.getElementById("v").innerHTML=parseInt(prompt("enter a"))+parseInt(prompt("enter b"));
+            
+        }
+        
+    </script>
+</body>
+</html>

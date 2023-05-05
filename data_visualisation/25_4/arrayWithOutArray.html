@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myArray=[1,2,3,4,5,6,7,8,9]
+        document.write(myArray+"<br>")
+        console.log(myArray)
+        var first=myArray[0];
+        console.log(first)
+        document.write(first+"<br>")
+        var last=myArray[myArray.length-1];
+        console.log(last)
+        document.write(last+"<br>")
+        document.write(myArray.pop()+"<br>")
+        document.write(myArray.indexOf(6)+"<br>")
+        document.write(myArray.sort((a,b)=> b-a)+"<br>")
+        document.write(myArray.sort(function(a,b){return 2*b>a+2;}))
+    </script>
+</body>
+</html>

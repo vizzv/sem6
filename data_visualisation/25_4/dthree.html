@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="D:\vishw\sem6\data_visualisation\Libraries\d3\d3.js"></script>
+</head>
+<body>
+    <script>
+        var data=[{key:1,value:100},
+        {key:2,value:200},
+        {key:3,value:150}]
+
+        console.table(data)
+        document.write("minimum is"+d3.min(data,function(d){return d.value;})+"<br>")
+        document.write("minimum is"+d3.max(data,function(d){return d.value;})+"<br>")
+    </script>
+</body>
+</html>

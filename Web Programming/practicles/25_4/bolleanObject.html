@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="a()">min</button>
+    <button onclick="a1()">max</button>
+    <button onclick="a2()">pi</button>
+    <button onclick="a3()">power</button>
+    <div id="dv"></div>
+    <script>
+        var b=true
+        console.log(typeof(b))
+        var c=new Boolean(null)
+        console.log(c)
+        var ele=document.getElementById("dv");
+        function a(){
+            
+            ele.innerHTML=Number.MIN_VALUE
+        }
+        function a1(){
+            
+            ele.innerHTML=Number.MAX_VALUE
+        }
+        function a2(){
+            
+            ele.innerHTML=Math.PI
+        }
+        function a3(){
+            var x=prompt("enter x");
+            var y=prompt("enter y");
+            ele.innerHTML=" x power y is = "+Math.pow(x,y)
+        }
+        console.log(Number.MIN_VALUE+"\n"+Number.MAX_VALUE)
+        console.log(Number.POSITIVE_INFINITY+"\n"+Number.NEGATIVE_INFINITY)
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(ck){
+           var ch=document.getElementById("p1");
+           
+           if(ck.checked){
+            ch.setAttribute("type","text");
+           }
+           else{
+            ch.setAttribute("type","password");
+           }
+            
+            
+           
+        }
+    </script>
+</head>
+<body>
+    <form>
+    pass1:<input id="p1" type="password">
+    check:<input id="p2" type="checkbox"  name="ck" onchange="validate(this)">
+    <button type="submit">submit</button>
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .high{fill: orangered}
+    </style>
+    <script src="../Libraries/d3/d3.js"></script>
+</head>
+<body style="background-color: #110133;">
+    <svg style="height: 700; width:700" >
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+    </svg>
+    <script>
+        var d=[10,20,35,40,50];
+        var color=["red","yellow","pink","green","cyan"]
+        var s=d3.select("body").select("svg").selectAll("circle");
+        s.data(d).attr("cy",50).attr("cx",function(data,i){return (i+1)*100}).transition().duration(1000).attr("r",function(data,i){return data;});
+        
+        s.data(d).attr("class",function(data){if(data>30){return "high"}});
+      
+        </script>
+</body>
+</html>

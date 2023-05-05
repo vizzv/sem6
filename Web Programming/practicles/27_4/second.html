@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        
+        function my(){
+            var ele=document.getElementById("a").value.toUpperCase();
+            document.getElementById("a").value=ele;
+            var ele1=document.getElementById("b").value.toLowerCase();
+            document.getElementById("b").value=ele1;
+        }
+        function my1(){
+            var ele=document.getElementById("b").value.toUpperCase();
+            document.getElementById("b").value=ele;
+            var ele1=document.getElementById("a").value.toLowerCase();
+            document.getElementById("a").value=ele1;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="text" id="a" onblur="my()">
+    <input type="text" name="text" id="b" onblur="my1()">
+</body>
+</html>

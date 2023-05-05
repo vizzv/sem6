@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ff(){
+            alert("a doba load thai gyu su jo E rhyo 6e")
+        }
+        function enter(){
+            alert("meri joli me kyu gusa")
+        }
+        function out(){
+            alert("bhul kr bhi kbi mat aana")
+        }
+        function enlarge(e){
+            
+            e.style.height="1000px"
+            e.style.width="1000px"
+    
+        }
+        function small(e){
+            
+            e.style.height="200px"
+            e.style.width="200px"
+        }
+    </script>
+</head>
+<body id="bd" onload="ff()" >
+    <p style="color: blue; border: 2px solid black ;" onmouseenter="enter(this)" onmouseout="out(this)">
+dvbhdfhvdkjdsbncbdnfjdbhksdjcbkj
+    </p>
+    <div>
+        <img style="border: 2px solid black;"id="img" src="mid_ll_1.png" height="200px" width="200px" onmouseenter="enlarge(this)" onmouseout="small(this)">
+    </div>
+</body>
+</html>

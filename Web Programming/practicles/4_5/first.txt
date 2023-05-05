@@ -1,0 +1,34 @@
+json=javascript object notation.
+it is text base formate.
+it is used for storing and transporting data.
+Json is langauage independent.
+It is self describing. and easy to user stand
+json is often used when data is sent from a server to a webpage.
+
+supported datatypes in json.
+ string
+ number
+ array
+ boolean
+ null
+ object
+ undefined
+
+Json syntax rules:
+    1 the json data would be in name value pair.
+    2 data is seprated by comma(,).
+    3 Json objects are surrounded by curly braces{}.
+    4 curly braces{} hold objects and square braces[] hold json array.
+
+difference of json and xml
+ 1 full form.
+ 2 xml is markup langauge,json is text based format.
+ 3 xml is havier and json is lightweight.
+ 4 xml supports comments and namespaces while other is not supporting.
+  
+JSON.stringify():
+    it converts js value to a json string
+
+JSON.parse():
+    it converts json string to into a js object.
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr,td{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <table id="ij">
+        <tr id="ii"></tr>
+    </table>
+
+    <script>
+        var tableData=[{name:"vizzv",rno:153,city:"ahm"},
+        {name:"Hinal",rno:159,city:"ahm"},
+        {name:"dummy",rno:999,city:"ahm"}]
+        var mytable=document.getElementById("ii");
+        for(var i=0;i<tableData.length;i++){
+            var v= tableData[i];
+            var x=document.createElement('td');
+            x.append(v.name);
+           mytable.appendChild(x);
+        }
+        //document.write("<br>"+parsedjsonperson.age)
+        
+    </script>
+</body>
+</html>

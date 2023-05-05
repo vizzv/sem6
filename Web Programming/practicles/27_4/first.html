@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function my(){
+            alert("image is unable to load");
+        }
+        function size(){
+        document.onresize(alert("resized"));
+        }
+        function selected(){
+            var v=document.getElementById("myform");
+            v.style.color="cyan"
+            v.style.backgroundColor="black"
+        }
+        
+    </script>
+</head>
+<body onresize="size()">
+    <img src="errored.png" width="200px" height="200px" onerror="my()" alt="image is not able to load">
+    <form id="myform" onselect="selected()">
+        <input type="text">
+        <textarea cols="50" rows="50"></textarea>
+    </form>
+</body>
+</html>

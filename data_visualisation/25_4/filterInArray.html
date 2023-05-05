@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=['a','b','p','r','e','f','g']
+        var b=['b','c','e','z','t']
+        var filterArray=a.filter(function(e){
+            return b.includes(e);
+        });
+        document.write(filterArray+"<br>")
+        var filterArray2=a.filter(function(e){
+            return !b.includes(e);
+        });
+        document.write(filterArray2+"<br>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[{name:"a",salary:50000},
+                {name:"b",salary:60000},
+                {name:"c",salary:40000}]
+
+        arr=arr.sort(function(x,y){
+            return x.salary-y.salary
+        });
+        console.log(arr)  
+        console.table(arr)
+        arr.forEach(element => {
+            document.write(element.name+" "+element.salary+"<br>")
+        });
+        var rivers=[{name:"ganga",length:2525},
+        {name:"godavari",length:1464},
+        {name:"krishna",length:1400},
+        {name:"yamuna",length:1376},
+        {name:"narma",length:1312},
+        {name:"indus",length:1114},
+        {name:"bramhaputra",length:916},
+        {name:"maha",length:890},
+        {name:"kaveri",length:800},
+        {name:"tapi",length:724}]
+        rivers=rivers.sort(function(x,y){
+            return x.name.length-y.name.length;
+        })
+        console.table(rivers)
+    </script>
+</body>
+</html>

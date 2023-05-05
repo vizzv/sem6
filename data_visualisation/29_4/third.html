@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="d3.js"></script>
+</head>
+<body style="background-color: #020114;">
+    <svg height="700" width="700">
+        <g>
+        <rect x=10 y=10 width=30 height=30></rect>
+        <rect x=10 y=60 width=30 height=30></rect>
+        <rect x=10 y=110 width=30 height=30></rect>
+        <rect x=10 y=160 width=30 height=30></rect>
+        <rect x=10 y=210 width=30 height=30></rect>
+        <rect x=10 y=260 width=30 height=30></rect>
+        </g>
+    </svg>
+    <script>
+        var grp1=d3.select("body").select("svg").select("g");
+        grp1.selectAll("rect").filter(":nth-child(even)").attr("fill","orange");
+        grp1.selectAll("rect").filter(":nth-child(odd)").attr("fill","dodgerblue");
+        grp1.selectAll("rect").filter(":first-child").attr("fill","red");
+        grp1.selectAll("rect").filter(":last-child").attr("fill","green");
+    </script>
+</body>
+</html>

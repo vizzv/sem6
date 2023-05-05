@@ -1,0 +1,27 @@
+by default in js when you compare any values it is providing boolean results.
+
+number object:
+the number object is an object wrapper for primitive numeric values.
+the number objects are created with new Number()
+
+properties:
+MAX_VALUE=it returns largest number possible in javascript.
+MIN_VALUE=it returns smallest number possible in javascript.
+
+
+Global functions():
+    It means pre-defined functions in javascript.
+    they can used at any level.
+    1->eval():
+        evaluate
+        syntax: eval(expression)
+    2->isFinite():
+        this function is used to determine wheather a specified number is finite or not.
+        if input is number it returns true otherwise false.
+        syntax: isFinite(number)  
+    3->isNaN():
+        this is exactlly opossite of  isFinite().
+        synatax: isNaN(number)
+    4->parseInt():
+        it parses a string and return integer.
+        syntax: parseInt(String)    

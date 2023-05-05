@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="d3.js"></script>
+</head>
+<body>
+    <svg height="500" width="500">
+        <g id="g1">
+            <circle cx=50 cy=50 r=20 fill="red"></circle>
+            <line x1=50 y1=70 x2=50 y2=200 stroke="black"></line>
+        </g>
+        <g id="g2">
+            <circle cx=200 cy=200 r=100 fill="orange"></circle>
+            <rect x=130 y=150 width=30 height=20></rect>
+            <rect x=230 y=150 width=30 height=20></rect>
+            <ellipse cx=200 cy=250 rx=50 ry=20></ellipse>
+        </g>
+    </svg>
+    <script>
+        var g1=d3.select("body").select("svg").select("g");
+        g1.attr("transform","translate(200,200) scale(2)");
+
+        d3.select("body").select("svg").select("#g2").attr("transform","rotate(20)");
+    </script>
+</body>
+</html>

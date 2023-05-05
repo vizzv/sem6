@@ -1,0 +1,25 @@
+<array><student>
+    <name>thepla</name>
+    <age>20</age>
+</student>
+<student>
+    <name>manchurian</name>
+    <age>20</age>
+</student>
+<student>
+    <name>idli</name>
+    <age>19</age>
+</student>
+<student>
+    <name>dokla</name>
+    <age>18</age>
+</student>
+<student>
+    <name>kaman</name>
+    <age>22</age>
+</student>
+<student>
+    <name>Khandvi</name>
+    <age>20</age>
+</student>
+</array>

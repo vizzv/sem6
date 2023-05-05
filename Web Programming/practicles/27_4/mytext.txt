@@ -1,0 +1,7 @@
+onresize:
+    this event is occured when size of an element is changed
+
+onblur:
+    this event occures when an object losses focus.
+    onblur is most often used with form validation code.(when the user leaves aform feild.)
+    note: onblur event is opposite of onfocus event.

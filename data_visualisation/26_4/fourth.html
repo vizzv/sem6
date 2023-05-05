@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="d3.js"></script>
+</head>
+<body>
+    <div>dv</div>
+    <div>sra</div>
+    <div>html</div>
+    <div>mi</div>
+    <button onclick="myfunc()">click me</button>
+    <script>
+        function myfunc(){
+            
+            d3.selectAll("div").each(function(p,j){
+                d3.select(this).text("div edited"+j)
+            })
+        }
+    </script>
+</body>
+</html>
